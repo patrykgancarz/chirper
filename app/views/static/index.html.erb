@@ -5,3 +5,10 @@
 </p>
 <%= Time.now %>
 <%= @some_variable %>
+<u1>
+  <% @users.each do |user| %>
+  <%= link_to user do %>
+    <li><%= user.login %> <%= user.name %></li>
+  <% end %>
+<% end %>
+</u1>
